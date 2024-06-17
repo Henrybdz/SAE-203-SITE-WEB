@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="submit.php" method="post" enctype="multipart/form-data">
+            <div class="form">
+                <span class="heading">Add a Car</span>
+                <input placeholder="Mclaren Model" type="text" class="input" name="model" required>
+                <input placeholder="Color" type="text" class="input" name="color" required>
+                <input placeholder="Mileage" type="number" class="input" name="mileage" required>
+                <textarea placeholder="Description of the car" rows="10" cols="30" name="message" class="textarea"></textarea>
+                <input type="file" name="image" accept="image/*" class="input" required>
+                <div class="button-container">
+                    <input type="submit" value="Envoyer" class="envoyer-button">
+                    <a href="javascript:history.back()" class="retour">Retour</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
